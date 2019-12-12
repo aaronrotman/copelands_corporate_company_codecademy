@@ -29,3 +29,15 @@ def username_generator(first_name, last_name):
 #Create a variable that stores the username for testing
 test_username = username_generator('Aaron', 'Rotman')
 print('Username: ' + test_username)
+
+#Create a function that will generate a password from the input username.
+def password_generator(username):
+  password = ''
+  for character in range(len(username)):
+    password += username[character - 1]
+  return password
+
+#Test password generator()
+#Create a variable that stores the password for testing
+test_password = password_generator(test_username)
+print('Password: ' + test_password)
