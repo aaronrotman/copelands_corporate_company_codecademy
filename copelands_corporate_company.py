@@ -9,19 +9,16 @@ def username_generator(first_name, last_name):
   #Check if the length of first_name is less than three. If so, add all characters in first_name to username.
   if len(first_name) < 3:
     username += first_name
-    print(username)
   #Otherwise add the first three characters in first_name to username.
   else:
     username += first_name[0:3]
-    print(username)
 
-  #Check if the length of last_name is less than four. If so, add all characters in last_name to username.
+   #Check if the length of last_name is less than four. If so, add all characters in last_name to username.
   if len(last_name) < 4:
-    username.append(last_name)
-    print(username)
+    username += last_name
   #Otherwise add the first four characters in last_name to username.
   else:
-    username.append(last_name[0:4])
+    username += last_name[0:4]
 
   return username
 
