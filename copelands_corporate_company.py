@@ -23,8 +23,9 @@ def username_generator(first_name, last_name):
   else:
     username.append(last_name[0:4])
 
-
   return username
 
 #Test username_generator()
-print(username_generator('Aaron', 'Rotman'))
+#Create a variable that stores the username for testing
+test_username = username_generator('Aaron', 'Rotman')
+print('Username: ' + test_username)
